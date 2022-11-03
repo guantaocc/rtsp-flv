@@ -14,6 +14,12 @@ export default {
       loading: true,
     };
   },
+  props: {
+    id: {
+      type: Number,
+      default: 0
+    }
+  },
   mounted() {
     this.playVideo();
   },
@@ -27,7 +33,7 @@ export default {
             type: "flv",
             isLive: true,
             hasAudio: false,
-            url: `ws://192.168.1.198:3000/rtsp/id123?url=rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4`,
+            url: `ws://192.168.1.198:3000/rtsp/${this.id}?url=rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4`,
           });
           this.player.attachMediaElement(video);
           this.player.load();

@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
-    <FlvPlayer />
+    <FlvPlayer :id="1" />
+    <FlvPlayer :id="2" />
+    <FlvPlayer :id="3"/>
+    <FlvPlayer :id="4"/>
+    <FlvPlayer :id="5"/>
+    <FlvPlayer :id="6"/>
+    <FlvPlayer :id="7"/>
+    <FlvPlayer :id="8"/>
+    <FlvPlayer :id="9"/>
+    <FlvPlayer :id="10"/>
   </div>
 </template>
 <script>

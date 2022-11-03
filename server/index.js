@@ -41,6 +41,9 @@ function rtspRequestHandle(ws, req) {
         console.log(url, "Stream codecData.");
         // 摄像机在线处理
       })
+      .on('progress', (data) => {
+        // console.log('progress', data)
+      })
       .on("error", function (err) {
         console.log(url, "An error occured: ", err.message);
       })
