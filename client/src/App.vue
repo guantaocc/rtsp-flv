@@ -1,24 +1,26 @@
 <template>
   <div id="app">
-    <FlvPlayer :id="1" />
-    <FlvPlayer :id="2" />
-    <FlvPlayer :id="3"/>
-    <FlvPlayer :id="4"/>
-    <FlvPlayer :id="5"/>
-    <FlvPlayer :id="6"/>
-    <FlvPlayer :id="7"/>
-    <FlvPlayer :id="8"/>
-    <FlvPlayer :id="9"/>
-    <FlvPlayer :id="10"/>
+    <!-- <FlvPlayer :id="1" /> -->
+    <CanvasPlayer />
+    <jsmpeg-player :url="url" />
   </div>
 </template>
 <script>
-import FlvPlayer from '@/components/FlvPlayer'
+// import FlvPlayer from "@/components/FlvPlayer";
+import JsmpegPlayer from '@/components/jsmpeg-player/jsmpeg-player'
+import CanvasPlayer from "@/components/CanvasPlayer";
 export default {
   components: {
-    FlvPlayer
-  }
-}
+    // FlvPlayer,
+    CanvasPlayer,
+    JsmpegPlayer
+  },
+  data() {
+    return {
+      url: "ws://localhost:9999",
+    };
+  },
+};
 </script>
 <style lang="less">
 #app {

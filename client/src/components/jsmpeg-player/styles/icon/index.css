@@ -1,0 +1,19 @@
+@import './iconfont.css';
+
+/* * [class*='jm-icon-'] + span {
+  margin-left: 5px;
+} */
+
+[class*='jm-icon-'],
+[class^='jm-icon-'] {
+  font-family: 'jsmpeg-player' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}

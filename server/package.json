@@ -14,6 +14,9 @@
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "http": "^0.0.1-security",
-    "websocket-stream": "^5.5.2"
+    "node-ffmpeg-stream": "^1.1.0",
+    "node-rtsp-stream": "^0.0.9",
+    "websocket-stream": "^5.5.2",
+    "ws": "^8.10.0"
   }
 }
